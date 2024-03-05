@@ -10,6 +10,7 @@ test('Verify "All Books" link is visible', async ({ page }) => {
 });
 
 test('Verify Login button is visible', async ({ page }) => {
+  
     await page.goto(pageUrl);
     await page.waitForSelector('#site-header > nav');
     const loginButton = await page.$('a[href="/login"]');
