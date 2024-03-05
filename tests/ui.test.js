@@ -35,7 +35,6 @@ test('Verify "All Books" link is visible after user login', async ({ page }) => 
   
     const allBooksLink = await page.$('a[href="/catalog"]');
     const isAllBooksLinkVisible = await allBooksLink.isVisible();
-  
     await expect(isAllBooksLinkVisible).toBe(true);
   });
   
